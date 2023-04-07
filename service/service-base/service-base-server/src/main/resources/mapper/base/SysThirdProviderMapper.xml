@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjnbit.store.service.base.mapper.SysThirdProviderMapper">
+    <resultMap id="BaseResultMap" type="com.zjnbit.store.framework.model.base.entity.SysThirdProviderEntity">
+        <!--@mbg.generated-->
+        <!--@Table sys_third_provider-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="provider_name" jdbcType="VARCHAR" property="providerName"/>
+        <result column="provider_type" jdbcType="VARCHAR" property="providerType"/>
+        <result column="source" jdbcType="VARCHAR" property="source"/>
+        <result column="provider_config" jdbcType="LONGVARCHAR" property="providerConfig"/>
+        <result column="create_by" jdbcType="BIGINT" property="createBy"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_by" jdbcType="BIGINT" property="updateBy"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, provider_name, provider_type, `source`, provider_config, create_by, create_time,
+        update_by, update_time
+    </sql>
+</mapper>

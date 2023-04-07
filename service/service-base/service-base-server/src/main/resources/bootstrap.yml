@@ -1,0 +1,62 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: service-base-server
+  profiles:
+    active: test
+  main:
+    allow-bean-definition-overriding: true
+
+#prometheous配置信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  metrics:
+    tags:
+      application: ${spring.application.name}
+#测试环境配置Nacos 配置中心和注册中心
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://81.70.248.45:8848 #注册中心地址
+        namespace: 76479815-d6b0-4bd1-9b54-cf03707047f3
+        username: nacos
+        password: lxy19911018
+      config:
+        server-addr: http://81.70.248.45:8848 # 配置中心地址
+        prefix: ${spring.application.name}
+        file-extension: yaml
+        namespace: 76479815-d6b0-4bd1-9b54-cf03707047f3
+        group: DEFAULT_GROUP
+        username: nacos
+        password: lxy19911018
+
+#生产环境配置Nacos 配置中心和注册中心
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://shuxin-prod-nacos:8848 #注册中心地址
+        namespace: shuxin-prod
+        username: nacosclient
+        password: nacos
+      config:
+        server-addr: http://shuxin-prod-nacos:8848 # 配置中心地址
+        file-extension: yaml
+        namespace: shuxin-prod
+        prefix: ${spring.application.name}
+        group: SHUXIN_GROUP
+        username: nacosclient
+        password: nacos

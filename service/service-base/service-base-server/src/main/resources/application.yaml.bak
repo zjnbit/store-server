@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/store_base?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: isDeleted
+      id-type: assign_id
+  mapper-locations: classpath:mapper/*.xml
+
+store:
+  cache:
+    address: redis://127.0.0.1:6379
+    password: 123456
+    database: 0
+  file:
+    api-url: https://0f3cb63bc2e14bd53b97486863deac5d.r2.cloudflarestorage.com
+    region: us-east-1
+    access-key-id: 34f4cf7f47aa60b98b17bf7d167ff50a
+    access-key-secret: f80401c58fd5e8d06fb82e13a9dc616fc6a64d83a6801eccc3427269ac577c45
+    bucket-name: zjnbit
+    cdn-host: https://oss.zjnbit.com
+  mail:
+    host: smtpdm.aliyun.com
+    port: 465
+    from: ZJNBIT<no-reply@notice.zjnbit.com>
+    user: no-reply@notice.zjnbit.com
+    pass: ZJNBITnotice1991
+    ssl-enable: true
+  secure:
+    jwt-secret-key: store.zjnbit.com

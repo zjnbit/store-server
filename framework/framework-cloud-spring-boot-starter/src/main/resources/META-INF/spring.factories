@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.zjnbit.store.framework.cloud.config.CloudAutoConfiguration

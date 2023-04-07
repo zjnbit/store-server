@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjnbit.store.service.base.mapper.UserThirdLoginMapper">
+  <resultMap id="BaseResultMap" type="com.zjnbit.store.framework.model.base.entity.UserThirdLoginEntity">
+    <!--@mbg.generated-->
+    <!--@Table user_third_login-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="source" jdbcType="VARCHAR" property="source" />
+    <result column="open_id" jdbcType="VARCHAR" property="openId" />
+    <result column="union_Id" jdbcType="VARCHAR" property="unionId" />
+    <result column="create_by" jdbcType="BIGINT" property="createBy" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_by" jdbcType="BIGINT" property="updateBy" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="is_deleted" jdbcType="BOOLEAN" property="isDeleted" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, user_id, `source`, open_id, union_Id, create_by, create_time, update_by, update_time, 
+    version, is_deleted
+  </sql>
+</mapper>
