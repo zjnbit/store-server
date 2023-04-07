@@ -13,11 +13,12 @@
 - Redis 6.x
 
 ## 模块列表
-
-- 商品服务（`yit-mall-product`）
-- 订单服务（`yit-mall-order`）
-- 用户服务（`yit-mall-user`）
-- 公共模块（`yit-mall-common`）
+- 服务(`service`)
+  - 基础模块(`service-base`)
+  - 库存模块(`service-stock`)
+  - 交易模块(`service-trade`)
+- 接口(`api`)
+  - web接口(`api-web`)
 
 ## 功能列表
 
