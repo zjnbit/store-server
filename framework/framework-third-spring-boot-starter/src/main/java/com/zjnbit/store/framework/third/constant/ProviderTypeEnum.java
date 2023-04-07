@@ -5,7 +5,7 @@ import lombok.Getter;
 
 /**
  * @author chenjy
- * @emp chenjy 
+ * @emp chenjy
  * @date 2023/3/28 16:00
  * @Description 类型(sms, auth, notify, trade)
  **/

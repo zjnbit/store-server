@@ -1,19 +1,16 @@
 package com.zjnbit.store.framework.model.base.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.zjnbit.store.framework.web.model.BaseEntity;
-
-import java.time.LocalDateTime;
-import java.util.Date;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import java.time.LocalDateTime;
+
 /**
  * @author chenjy
- * @emp chenjy 
+ * @emp chenjy
  * @date 2023/3/29 15:34
  * @Description ${description}
  **/

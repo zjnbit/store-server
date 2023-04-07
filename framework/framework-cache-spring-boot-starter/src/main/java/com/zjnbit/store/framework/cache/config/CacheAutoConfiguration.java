@@ -20,7 +20,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
  * @author chenjy
- * @emp chenjy 
+ * @emp chenjy
  * @mobile 18158571991
  * @date 2021/12/10 09:27
  * @Description

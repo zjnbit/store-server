@@ -5,11 +5,11 @@ import com.zjnbit.store.framework.model.base.entity.UserThirdLoginEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
-* @author chenjy
-* @emp chenjy 
-* @date 2023/3/29 15:39
-* @Description ${description}
-**/
+ * @author chenjy
+ * @emp chenjy
+ * @date 2023/3/29 15:39
+ * @Description ${description}
+ **/
 @Mapper
 public interface UserThirdLoginMapper extends BaseMapper<UserThirdLoginEntity> {
 }

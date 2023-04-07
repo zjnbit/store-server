@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zjnbit.store.service.base.mapper.SysNoticeProviderMapper">
-  <resultMap id="BaseResultMap" type="com.zjnbit.store.framework.model.base.entity.SysNoticeProviderEntity">
-    <!--@mbg.generated-->
-    <!--@Table sys_notice_provider-->
-    <id column="id" jdbcType="BIGINT" property="id" />
-    <result column="provider_name" jdbcType="VARCHAR" property="providerName" />
-    <result column="provider_type" jdbcType="VARCHAR" property="providerType" />
-    <result column="source" jdbcType="VARCHAR" property="source" />
-    <result column="is_default" jdbcType="BOOLEAN" property="isDefault" />
-    <result column="provider_config" jdbcType="LONGVARCHAR" property="providerConfig" />
-    <result column="create_by" jdbcType="BIGINT" property="createBy" />
-    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
-    <result column="update_by" jdbcType="BIGINT" property="updateBy" />
-    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
-    <result column="version" jdbcType="INTEGER" property="version" />
-    <result column="is_deleted" jdbcType="BOOLEAN" property="isDeleted" />
-  </resultMap>
-  <sql id="Base_Column_List">
-    <!--@mbg.generated-->
-    id, provider_name, provider_type, `source`, is_default, provider_config, create_by, 
-    create_time, update_by, update_time, version, is_deleted
-  </sql>
+    <resultMap id="BaseResultMap" type="com.zjnbit.store.framework.model.base.entity.SysNoticeProviderEntity">
+        <!--@mbg.generated-->
+        <!--@Table sys_notice_provider-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="provider_name" jdbcType="VARCHAR" property="providerName"/>
+        <result column="provider_type" jdbcType="VARCHAR" property="providerType"/>
+        <result column="source" jdbcType="VARCHAR" property="source"/>
+        <result column="is_default" jdbcType="BOOLEAN" property="isDefault"/>
+        <result column="provider_config" jdbcType="LONGVARCHAR" property="providerConfig"/>
+        <result column="create_by" jdbcType="BIGINT" property="createBy"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_by" jdbcType="BIGINT" property="updateBy"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="version" jdbcType="INTEGER" property="version"/>
+        <result column="is_deleted" jdbcType="BOOLEAN" property="isDeleted"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, provider_name, provider_type, `source`, is_default, provider_config, create_by,
+        create_time, update_by, update_time, version, is_deleted
+    </sql>
 </mapper>

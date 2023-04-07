@@ -1,22 +1,19 @@
 package com.zjnbit.store.framework.model.base.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.zjnbit.store.framework.web.model.BaseEntity;
-import java.util.Date;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 /**
-* @author chenjy
-* @emp chenjy 
-* @date 2023/3/30 10:04
-* @Description ${description}
-**/
+ * @author chenjy
+ * @emp chenjy
+ * @date 2023/3/30 10:04
+ * @Description ${description}
+ **/
 @Data
-@EqualsAndHashCode(callSuper=true)
+@EqualsAndHashCode(callSuper = true)
 @TableName(value = "sys_notice_provider")
 public class SysNoticeProviderEntity extends BaseEntity {
     @TableField(value = "provider_name")

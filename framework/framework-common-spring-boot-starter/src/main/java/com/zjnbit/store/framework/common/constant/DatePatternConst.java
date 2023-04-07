@@ -2,7 +2,7 @@ package com.zjnbit.store.framework.common.constant;
 
 /**
  * @author chenjy
- * @emp chenjy 
+ * @emp chenjy
  * @mobile 18158571991
  * @date 2021/11/29 10:25
  * @Description

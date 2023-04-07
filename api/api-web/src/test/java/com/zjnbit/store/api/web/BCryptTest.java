@@ -6,7 +6,7 @@ import org.junit.Test;
 
 /**
  * @author chenjy
- * @emp chenjy 
+ * @emp chenjy
  * @date 2023/3/27 16:51
  * @Description
  **/
@@ -16,7 +16,7 @@ public class BCryptTest {
     public void xx() {
         String plaintest = "123456";
         String hex = MD5.create().digestHex(plaintest);
-        String hashed= BCrypt.hashpw(hex, BCrypt.gensalt());
+        String hashed = BCrypt.hashpw(hex, BCrypt.gensalt());
         System.out.println(hex);
         System.out.println(hashed);
         System.out.println(BCrypt.checkpw(hex, hashed));

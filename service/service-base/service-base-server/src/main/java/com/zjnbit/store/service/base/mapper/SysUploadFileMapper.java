@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
  * @author chenjy
- * @emp chenjy 
+ * @emp chenjy
  * @date 2023/3/21 16:14
  * @Description ${description}
  **/

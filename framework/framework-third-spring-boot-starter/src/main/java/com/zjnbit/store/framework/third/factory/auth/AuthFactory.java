@@ -11,7 +11,7 @@ import me.zhyd.oauth.utils.AuthStateUtils;
 
 /**
  * @author chenjy
- * @emp chenjy 
+ * @emp chenjy
  * @date 2023/3/28 13:57
  * @Description
  **/

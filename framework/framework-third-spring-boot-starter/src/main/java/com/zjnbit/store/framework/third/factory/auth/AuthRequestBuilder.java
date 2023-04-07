@@ -9,7 +9,7 @@ import me.zhyd.oauth.request.*;
 
 /**
  * @author chenjy
- * @emp chenjy 
+ * @emp chenjy
  * @date 2023/3/28 14:13
  * @Description
  **/

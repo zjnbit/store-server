@@ -5,7 +5,7 @@ import lombok.Data;
 
 /**
  * @author chenjy
- * @emp chenjy 
+ * @emp chenjy
  * @date 2023/3/30 08:48
  * @Description
  **/
@@ -14,18 +14,6 @@ public class EmailConf {
     private Long id;
     private Boolean isDefault;
     private Value value;
-
-    @Data
-    public static class Value {
-        private String host;
-        private Integer port;
-        private String from;
-        private String user;
-        private Boolean auth;
-        private String pass;
-        private Boolean sslEnable;
-
-    }
 
     public MailAccount toMailAccount() {
         MailAccount account = new MailAccount();
@@ -37,5 +25,17 @@ public class EmailConf {
         account.setPass(this.value.getPass());
         account.setSslEnable(this.value.getSslEnable());
         return account;
+    }
+
+    @Data
+    public static class Value {
+        private String host;
+        private Integer port;
+        private String from;
+        private String user;
+        private Boolean auth;
+        private String pass;
+        private Boolean sslEnable;
+
     }
 }

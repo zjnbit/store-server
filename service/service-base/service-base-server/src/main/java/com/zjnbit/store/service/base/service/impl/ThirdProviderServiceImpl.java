@@ -7,14 +7,13 @@ import com.zjnbit.store.framework.model.base.entity.SysThirdProviderEntity;
 import com.zjnbit.store.framework.third.constant.ProviderTypeEnum;
 import com.zjnbit.store.service.base.mapper.SysThirdProviderMapper;
 import com.zjnbit.store.service.base.service.ThirdProviderService;
-import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 /**
  * @author chenjy
- * @emp chenjy 
+ * @emp chenjy
  * @date 2023/3/28 11:08
  * @Description
  **/

@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author chenjy
- * @emp chenjy 
+ * @emp chenjy
  * @date 2023/3/28 11:04
  * @Description
  **/
@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping("/oauth")
 public class OauthController extends BaseController<OauthService> {
 
-    @PostMapping(value="/signup/code")
+    @PostMapping(value = "/signup/code")
     public Result<Boolean> signupCode(@RequestBody OauthSignupCodeParam param) {
         return Result.success(baseService.signupCode(param));
     }
@@ -38,7 +38,6 @@ public class OauthController extends BaseController<OauthService> {
     public Result<OauthSigninVo> signin(@RequestBody @Validated OauthSigninParam param) {
         return Result.success(baseService.signin(param));
     }
-
 
 
     @GetMapping("/render/{source}")

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author chenjy
- * @emp chenjy 
+ * @emp chenjy
  * @date 2023/3/17 16:27
  * @Description
  **/
@@ -27,12 +27,12 @@ public class TestController {
     @GetMapping("/test")
     public void test() {
         StpUtil.login("111",
-                SaLoginConfig.setExtra("userId",1637630173098561538L)
-                        .setExtra("username","chenjy")
-                        .setExtra("email","chenjy@chenjy.cn")
-                        .setExtra("phone","13666711991")
-                        .setExtra("nickname","非羽Army")
-                        .setExtra("headpic","https://oss.zjnbit.com/20230329/1640900247167619072.png")
+                SaLoginConfig.setExtra("userId", 1637630173098561538L)
+                        .setExtra("username", "chenjy")
+                        .setExtra("email", "chenjy@chenjy.cn")
+                        .setExtra("phone", "13666711991")
+                        .setExtra("nickname", "非羽Army")
+                        .setExtra("headpic", "https://oss.zjnbit.com/20230329/1640900247167619072.png")
         );
         System.out.println(StpUtil.getTokenInfo());
     }

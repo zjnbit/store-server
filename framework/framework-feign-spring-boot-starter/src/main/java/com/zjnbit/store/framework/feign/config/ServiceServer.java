@@ -2,7 +2,7 @@ package com.zjnbit.store.framework.feign.config;
 
 /**
  * @author chenjy
- * @emp chenjy 
+ * @emp chenjy
  * @date 2023/3/21 17:19
  * @Description
  **/

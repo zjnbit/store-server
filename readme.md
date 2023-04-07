@@ -13,12 +13,13 @@
 - Redis 6.x
 
 ## 模块列表
+
 - 服务(`service`)
-  - 基础模块(`service-base`)
-  - 库存模块(`service-stock`)
-  - 交易模块(`service-trade`)
+    - 基础模块(`service-base`)
+    - 库存模块(`service-stock`)
+    - 交易模块(`service-trade`)
 - 接口(`api`)
-  - web接口(`api-web`)
+    - web接口(`api-web`)
 
 ## 功能列表
 
@@ -41,7 +42,8 @@
 
 1. 克隆代码仓库到本地：`git clone https://github.com/your-username/yit-mall.git`
 2. 进入项目根目录，运行命令 `mvn install` 安装依赖包
-3. 在 `yit-mall-product`、`yit-mall-order` 和 `yit-mall-user` 模块的 `application.yml` 文件中配置各自的端口号、MySQL 和 Redis 的连接信息，以及注册中心的地址：
+3. 在 `yit-mall-product`、`yit-mall-order` 和 `yit-mall-user` 模块的 `application.yml` 文件中配置各自的端口号、MySQL 和
+   Redis 的连接信息，以及注册中心的地址：
 
 ```yaml
 server:

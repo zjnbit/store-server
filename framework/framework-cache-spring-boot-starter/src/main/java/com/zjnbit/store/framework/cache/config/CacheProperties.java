@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
  * @author chenjy
- * @emp chenjy 
+ * @emp chenjy
  * @mobile 18158571991
  * @date 2021/12/10 17:15
  * @Description
